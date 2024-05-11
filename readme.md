@@ -1,0 +1,8 @@
+Hamarosan elérkezünk a szakdolgozatok témabejelentési periódusához. A neptunban (szülő) megnyílik az opció, hogy a hallgató (gyerek) feltölthesse a témáját és felkérhessen erre egy témavezetőt (gyerek) aki vagy elvállalja a téma vezetését vagy nem.
+
+1. Sűrű időszaka ez a félévnek, így mind a hallgató mind a témavezető bejelentkezik a neptunba, hogy kezelni tudják a témabejelentések adminisztrációs feladatait. Mind a hallgató mind a témavezető jelzést (signal) küldenek a neptunnak, hogy bejelentkeztek, amit a neptun "nyugtáz" és kiírja a képernyőre, hogy a hallgató és a témavezető is sikeresen bejelentkezett. Ezt követően a hallgató "feltölti" - csövön (pipe) keresztül elküldi a neptun részére a szakdolgozati témájának a bejelentő dokumentumát, amely az alábbi adatokat tartalmazza: Dolgozat címe, Hallgató neve, Beadás éve, Témavezető neve. Ezt a neptun továbbküld a témavezetőnek szintén csövön (pipe) aki ezen adatokat/részleteket kiírja a képernyőre. A Neptun várja meg amíg a hallgató és a témavezető is bevejezi az adminisztrációs tevékenységét. (Szülő bevárja a gyerek folyamatok végét és végig fenntartja a kapcsolatot.)
+
+2. A témavezető feltesz egy értelmező kérdést a hallgató felé üzenetsoron (message queue) keresztül, hogy "Milyen technológiával szeretné a feladatát megvalósítani?". Erre a hallgató nem válaszol, megfontolja mi lenne a megfelelő választás a számára.
+A kérdést amit kap a hallgató, kiírja a képernyőre.
+
+3. Ezt követően a témavezető eldönti, hogy elvállalja-e a témát vagy sem. 20% valószínűséggel utasítja el a téma vezetését, döntését osztott memóriába írja amit a hallgató elolvas, ezt az eredményt képernyőre írja.
